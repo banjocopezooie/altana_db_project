@@ -11,11 +11,8 @@ import pandas as pd
 Converting the CSV File to a Sqlite database file
 """
 def populate_database(input_csv_file, chunk_size):
-    print(input_csv_file)
     base_dir = os.path.abspath(os.path.dirname(__file__))
     db_file = base_dir + "/../data/DB_ReceitaFederal_QuadroSocietario.db"
-    print(base_dir)
-    print(db_file)
 
     print("Removing old database files.")
     if os.path.exists(db_file):
